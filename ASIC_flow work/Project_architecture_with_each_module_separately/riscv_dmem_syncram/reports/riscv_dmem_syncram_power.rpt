@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : riscv_dmem_syncram
+Version: V-2023.12-SP5-2
+Date   : Thu Oct  9 14:25:15 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed32hvt_ff0p95v125c (File: /home/student/24MVD1016_Thesis/Project4_3/riscv_dmem_syncram/saed32hvt_ff0p95v125c.db)
+
+
+Operating Conditions: ff0p95v125c   Library: saed32hvt_ff0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+riscv_dmem_syncram     70000             saed32hvt_ff0p95v125c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   8.4539 mW  (100%)
+  Net Switching Power  =  15.2989 uW    (0%)
+                         ---------
+Total Dynamic Power    =   8.4692 mW  (100%)
+
+Cell Leakage Power     =  60.4227 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  8.5532e+03            0.0000            0.0000        8.5532e+03  (  12.42%)  i
+register       -3.1155e+01            0.1383        4.2513e+10        4.2482e+04 (  61.67%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  -6.8153e+01           15.1606        1.7909e+10        1.7856e+04 (  25.92%)
+--------------------------------------------------------------------------------------------------
+Total          8.4539e+03 uW        15.2989 uW     6.0423e+10 pW     6.8892e+04 uW
+1

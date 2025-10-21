@@ -1,0 +1,64 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : riscv_ex
+Version: V-2023.12-SP5-2
+Date   : Thu Oct  9 11:11:20 2025
+****************************************
+
+Operating Conditions: ff0p95v125c   Library: saed32hvt_ff0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: id_ex_alu_src_imm
+              (input port)
+  Endpoint: branch_target[0]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_ex           8000                  saed32hvt_ff0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  id_ex_alu_src_imm (in)                   0.00       0.00 f
+  U1159/Y (MUX21X2_HVT)                  107.76     107.76 f
+  U787/Y (NBUFFX4_HVT)                     5.43     113.19 f
+  U856/Y (INVX4_HVT)                      61.50     174.69 r
+  U1343/Y (AND2X1_HVT)                    81.07     255.75 r
+  U792/Y (AOI222X1_HVT)                    0.14     255.89 f
+  U1402/Y (NAND3X0_HVT)                    0.07     255.96 r
+  U1403/Y (AO22X1_HVT)                     0.05     256.01 r
+  U1404/Y (NAND2X0_HVT)                    0.03     256.04 f
+  U1405/Y (NAND3X0_HVT)                    0.03     256.08 r
+  U1406/Y (AND2X1_HVT)                     0.04     256.12 r
+  U1409/Y (AND2X1_HVT)                     0.04     256.16 r
+  U1411/Y (AO221X1_HVT)                    0.07     256.22 r
+  U1414/Y (AO22X1_HVT)                     0.06     256.28 r
+  U1415/Y (NAND2X0_HVT)                    0.03     256.31 f
+  U1416/Y (NAND3X0_HVT)                    0.03     256.34 r
+  U1417/Y (AND2X1_HVT)                     0.04     256.38 r
+  U1419/Y (AND2X1_HVT)                     0.04     256.42 r
+  U1422/Y (AO221X1_HVT)                    0.07     256.49 r
+  U1423/Y (NAND2X0_HVT)                    0.03     256.52 f
+  U1424/Y (NAND3X0_HVT)                    0.03     256.56 r
+  U1425/Y (OA222X1_HVT)                    0.05     256.61 r
+  U1427/Y (NAND4X0_HVT)                    0.05     256.66 f
+  U1428/Y (NAND2X0_HVT)                    0.04     256.70 r
+  U1429/Y (AO22X1_HVT)                     0.05     256.75 r
+  U1430/Y (NOR4X0_HVT)                     0.11     256.85 f
+  U843/Y (NBUFFX2_HVT)                     7.11     263.96 f
+  U1432/Y (AND2X1_HVT)                    13.31     277.27 f
+  U1434/Y (AND2X1_HVT)                     0.04     277.31 f
+  branch_target[0] (out)                   0.00     277.31 f
+  data arrival time                                 277.31
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

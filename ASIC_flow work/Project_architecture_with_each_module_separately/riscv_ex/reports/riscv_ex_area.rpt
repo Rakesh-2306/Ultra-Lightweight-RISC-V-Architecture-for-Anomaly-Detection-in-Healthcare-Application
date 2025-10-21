@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : riscv_ex
+Version: V-2023.12-SP5-2
+Date   : Thu Oct  9 11:11:20 2025
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed32hvt_ff0p95v125c (File: /home/student/24MVD1016_Thesis/Project4_3/riscv_ex/saed32hvt_ff0p95v125c.db)
+
+Number of ports:                          325
+Number of nets:                          2919
+Number of cells:                         2303
+Number of combinational cells:           2303
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                        225
+Number of references:                      35
+
+Combinational area:               6369.102762
+Buf/Inv area:                      301.160642
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1729.900536
+
+Total cell area:                  6369.102762
+Total area:                       8099.003298
+1

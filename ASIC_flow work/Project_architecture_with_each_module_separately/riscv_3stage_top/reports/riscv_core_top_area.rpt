@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : riscv_core_top
+Version: V-2023.12-SP5-2
+Date   : Thu Oct  9 15:59:01 2025
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'riscv_core_top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    saed32hvt_ff0p95v125c (File: /home/student/24MVD1016_Thesis/Project4_3/riscv_3stage_top/saed32hvt_ff0p95v125c.db)
+
+Number of ports:                          807
+Number of nets:                          9598
+Number of cells:                         8650
+Number of combinational cells:           7337
+Number of sequential cells:              1305
+Number of macros/black boxes:               0
+Number of buf/inv:                       1547
+Number of references:                      20
+
+Combinational area:              18105.726968
+Buf/Inv area:                     2644.114271
+Noncombinational area:            9286.421921
+Macro/Black Box area:                0.000000
+Net Interconnect area:            7910.977341
+
+Total cell area:                 27392.148889
+Total area:                      35303.126230
+1

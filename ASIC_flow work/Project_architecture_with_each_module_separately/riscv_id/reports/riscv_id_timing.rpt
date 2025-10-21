@@ -1,0 +1,39 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : riscv_id
+Version: V-2023.12-SP5-2
+Date   : Mon Sep 22 18:51:29 2025
+****************************************
+
+Operating Conditions: ff0p95v125c   Library: saed32hvt_ff0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: if_instr[5]
+              (input port)
+  Endpoint: branch_imm_out[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_id           ForQA                 saed32hvt_ff0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  if_instr[5] (in)                         0.00       0.00 f
+  U119/Y (NAND3X0_HVT)                     1.26       1.26 r
+  U120/Y (NOR4X0_HVT)                      0.14       1.40 f
+  U111/Y (AND2X2_HVT)                      1.00       2.39 f
+  branch_imm_out[31] (out)                 6.00       8.39 f
+  data arrival time                                   8.39
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,61 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : riscv_core_top
+Version: V-2023.12-SP5-2
+Date   : Thu Oct  9 15:59:02 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed32hvt_ff0p95v125c (File: /home/student/24MVD1016_Thesis/Project4_3/riscv_3stage_top/saed32hvt_ff0p95v125c.db)
+
+
+Operating Conditions: ff0p95v125c   Library: saed32hvt_ff0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+riscv_core_top         35000             saed32hvt_ff0p95v125c
+riscv_regfile          16000             saed32hvt_ff0p95v125c
+riscv_id               8000              saed32hvt_ff0p95v125c
+riscv_ex               16000             saed32hvt_ff0p95v125c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   2.1564 mW   (99%)
+  Net Switching Power  =  13.8308 uW    (1%)
+                         ---------
+Total Dynamic Power    =   2.1702 mW  (100%)
+
+Cell Leakage Power     =  27.6800 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  2.3328e+03            0.0000            0.0000        2.3328e+03  (   7.82%)  i
+register       -1.5627e+02            0.8578        1.2126e+10        1.1971e+04 (  40.10%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  -2.0180e+01           12.9732        1.5554e+10        1.5547e+04 (  52.08%)
+--------------------------------------------------------------------------------------------------
+Total          2.1564e+03 uW        13.8310 uW     2.7680e+10 pW     2.9850e+04 uW
+1

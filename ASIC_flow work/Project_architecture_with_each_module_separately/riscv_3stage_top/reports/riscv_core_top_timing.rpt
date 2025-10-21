@@ -1,0 +1,87 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : riscv_core_top
+Version: V-2023.12-SP5-2
+Date   : Thu Oct  9 15:59:02 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ff0p95v125c   Library: saed32hvt_ff0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: id_ex_alu_src_imm_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wb_data_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core_top     35000                 saed32hvt_ff0p95v125c
+  riscv_ex           16000                 saed32hvt_ff0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex_alu_src_imm_reg/CLK (DFFARX1_HVT)                 0.00 #     0.00 r
+  id_ex_alu_src_imm_reg/Q (DFFARX1_HVT)                   0.09       0.09 f
+  u_ex/id_ex_alu_src_imm (riscv_ex)                       0.00       0.09 f
+  u_ex/B_0/Y (NBUFFX2_HVT)                                0.08       0.17 f
+  u_ex/U1049/Y (NBUFFX2_HVT)                              0.14       0.31 f
+  u_ex/U314/Y (NBUFFX2_HVT)                               0.24       0.54 f
+  u_ex/U738/Y (AO22X1_HVT)                                0.25       0.79 f
+  u_ex/U1082/Y (NBUFFX2_HVT)                              0.09       0.88 f
+  u_ex/U1354/Y (NAND2X0_HVT)                              6.14       7.02 r
+  u_ex/U1355/Y (INVX0_HVT)                                0.07       7.09 f
+  u_ex/U1356/Y (AND2X1_HVT)                               0.15       7.24 f
+  u_ex/U1700/CO (FADDX1_HVT)                              0.08       7.32 f
+  u_ex/U1358/CO (FADDX1_HVT)                              0.17       7.49 f
+  u_ex/U555/Y (OR2X1_HVT)                                 0.20       7.69 f
+  u_ex/U556/Y (AOI22X1_HVT)                               0.05       7.74 r
+  u_ex/U381/Y (OA22X1_HVT)                                0.09       7.83 r
+  u_ex/U552/Y (OA22X1_HVT)                                0.09       7.91 r
+  u_ex/U543/Y (OAI22X1_HVT)                               0.10       8.01 f
+  u_ex/U433/Y (AO21X1_HVT)                                0.12       8.13 f
+  u_ex/U386/Y (AO21X1_HVT)                                0.12       8.25 f
+  u_ex/U364/Y (NAND3X0_HVT)                               0.07       8.31 r
+  u_ex/U484/Y (OA21X1_HVT)                                0.04       8.36 r
+  u_ex/U77/Y (OAI21X1_HVT)                                0.07       8.43 f
+  u_ex/U692/Y (NAND4X0_HVT)                               0.07       8.50 r
+  u_ex/U361/Y (OR2X1_HVT)                                 0.09       8.59 r
+  u_ex/U358/Y (NAND3X0_HVT)                               0.08       8.67 f
+  u_ex/U346/Y (AO21X1_HVT)                                0.10       8.77 f
+  u_ex/U345/Y (NAND3X0_HVT)                               0.19       8.96 r
+  u_ex/U355/Y (NAND3X0_HVT)                               0.06       9.01 f
+  u_ex/U359/Y (AO21X1_HVT)                                0.17       9.18 f
+  u_ex/U342/Y (NAND3X0_HVT)                               0.19       9.37 r
+  u_ex/U341/Y (NAND4X0_HVT)                               0.07       9.44 f
+  u_ex/U1364/Y (AO22X1_HVT)                               0.12       9.56 f
+  u_ex/U339/Y (AO22X1_HVT)                                0.11       9.68 f
+  u_ex/U43/Y (XOR2X1_HVT)                                 0.07       9.75 r
+  u_ex/U369/Y (AO21X1_HVT)                                0.06       9.81 r
+  u_ex/ex_alu_result[31] (riscv_ex)                       0.00       9.81 r
+  U310/Y (AO22X1_HVT)                                     0.08       9.89 r
+  wb_data_reg[31]/D (DFFARX1_HVT)                         0.01       9.90 r
+  data arrival time                                                  9.90
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.06       9.94
+  wb_data_reg[31]/CLK (DFFARX1_HVT)                       0.00       9.94 r
+  library setup time                                     -0.04       9.90
+  data required time                                                 9.90
+  --------------------------------------------------------------------------
+  data required time                                                 9.90
+  data arrival time                                                 -9.90
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

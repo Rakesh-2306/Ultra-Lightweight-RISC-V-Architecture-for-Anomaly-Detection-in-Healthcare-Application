@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : riscv_3stage
+Version: V-2023.12-SP5-2
+Date   : Fri Sep 12 18:00:03 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed32hvt_ff0p95v125c (File: /home/student/24MVD1016_Thesis/Pro3/saed32hvt_ff0p95v125c.db)
+
+
+Operating Conditions: ff0p95v125c   Library: saed32hvt_ff0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+riscv_3stage           35000             saed32hvt_ff0p95v125c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   2.1134 mW   (99%)
+  Net Switching Power  =  20.5765 uW    (1%)
+                         ---------
+Total Dynamic Power    =   2.1340 mW  (100%)
+
+Cell Leakage Power     =  27.0446 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  2.2896e+03            0.0000            0.0000        2.2896e+03  (   7.85%)  i
+register       -1.4308e+02            0.6279        1.1792e+10        1.1650e+04 (  39.93%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  -3.3082e+01           19.9488        1.5252e+10        1.5239e+04 (  52.23%)
+--------------------------------------------------------------------------------------------------
+Total          2.1134e+03 uW        20.5767 uW     2.7045e+10 pW     2.9179e+04 uW
+1

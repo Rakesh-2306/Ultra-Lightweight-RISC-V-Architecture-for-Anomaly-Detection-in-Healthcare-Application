@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : riscv_dmem_syncram
+Version: V-2023.12-SP5-2
+Date   : Thu Oct  9 14:25:15 2025
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'riscv_dmem_syncram' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    saed32hvt_ff0p95v125c (File: /home/student/24MVD1016_Thesis/Project4_3/riscv_dmem_syncram/saed32hvt_ff0p95v125c.db)
+
+Number of ports:                           74
+Number of nets:                         12221
+Number of cells:                        12179
+Number of combinational cells:           8051
+Number of sequential cells:              4128
+Number of macros/black boxes:               0
+Number of buf/inv:                        936
+Number of references:                      13
+
+Combinational area:              19718.524773
+Buf/Inv area:                     1537.571239
+Noncombinational area:           27276.768127
+Macro/Black Box area:                0.000000
+Net Interconnect area:           21908.456404
+
+Total cell area:                 46995.292900
+Total area:                      68903.749304
+1

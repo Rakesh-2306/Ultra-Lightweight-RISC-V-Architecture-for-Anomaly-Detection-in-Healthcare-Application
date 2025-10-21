@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : riscv_regfile
+Version: V-2023.12-SP5-2
+Date   : Mon Sep 22 18:57:08 2025
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'riscv_regfile' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    saed32hvt_ff0p95v125c (File: /home/student/24MVD1016_Thesis/Project4_3/riscv_regfile/saed32hvt_ff0p95v125c.db)
+
+Number of ports:                          114
+Number of nets:                          4081
+Number of cells:                         4034
+Number of combinational cells:           3010
+Number of sequential cells:              1024
+Number of macros/black boxes:               0
+Number of buf/inv:                        321
+Number of references:                      12
+
+Combinational area:               7289.866524
+Buf/Inv area:                      540.310160
+Noncombinational area:            7286.816895
+Macro/Black Box area:                0.000000
+Net Interconnect area:            5549.734620
+
+Total cell area:                 14576.683419
+Total area:                      20126.418039
+1
